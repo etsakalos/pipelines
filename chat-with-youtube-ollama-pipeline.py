@@ -48,7 +48,7 @@ class Pipeline:
     class Valves(BaseModel):
         OLLAMA_API_BASE_URL: str = "http://localhost:11434" # or http://host.docker.internal:11434
         OLLAMA_API_KEY: str = "if you are hosting ollama, put api key here"
-        OLLAMA_API_MODEL: str = "llama3,1:8b"
+        OLLAMA_API_MODEL: str = "llama3.1:8b"
         OLLAMA_API_TEMPERATURE: float = 0.7
         AGENT_SYSTEM_PROMPT: str = (
             "You are a smart assistant that searches for YouTube videos, retrieves their transcripts, "
